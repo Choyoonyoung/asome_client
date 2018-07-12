@@ -1,19 +1,23 @@
 import styled from 'styled-components';
 
 const Container = styled.div`
-	width: 100%;
-	height: 160px;
-	background-color: #121212;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
+  width: 100%;
+  height: 120px;
+  background-color: #121212;
+  padding: 0 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 `;
+
 const Title = styled.h1`
-	color: white;
-	margin: 0;
+  color: #ffffff;
+  margin: 0 0 4px;
 `;
-const SubTitle = styled.h4`
-	color: white;
-	margin: 0;
+
+const SubTitle = styled.p`
+  color: #ffffff;
+  margin: 0;
 `;
-export default {Container, Title, SubTitle};
+
+export default { Container, Title, SubTitle };

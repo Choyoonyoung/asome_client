@@ -1,9 +1,16 @@
 import styled from 'styled-components';
 
 const Container = styled.div`
-	display: flex;
-	width: 100%;
-	min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 `;
 
-export default { Container };
+const ContentSection = styled.div`
+  flex: 1;
+  display: flex;
+  min-height: 80vh;
+  padding: 16px 8px;
+`;
+
+export default { Container, ContentSection };
