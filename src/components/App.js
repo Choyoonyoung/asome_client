@@ -8,6 +8,7 @@ import styled from './AppStyle';
 import Form from './Form';
 
 import Home from './Home';
+import Login from './Login';
 
 class App extends Component {
   render() {
@@ -17,8 +18,10 @@ class App extends Component {
           <Header />
           <styled.ContentSection>
             <Navbar />
+			
             <Route exact path="/" component={Home} />
-      			<Route path="/meeting" component={Form}/>
+      		<Route path="/meeting" component={Form}/>
+			<Route path="/logout" component={Login}/>
           </styled.ContentSection>
           <Footer />
         </styled.Container>
