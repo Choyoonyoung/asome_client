@@ -1,19 +1,25 @@
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 const Container = styled.div`
-	flex-basis: 250px;
-	height: 300px;
-	display: flex;
-	flex-direction: column;
+  flex-basis: 180px;
+  height: 320px;
+  display: flex;
+  flex-direction: column;
 `;
-const NavSelect = styled.div`
-	padding-left: 10px;
-	flex: 1;
-	background-color: #121212;
-	display: flex;
-	align-items: center;
+
+const NavSelect = styled(Link)`
+  padding-left: 10px;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  color: #121212;
+  border-radius: 12px;
+  &:hover {
+    background-color: blue;
+    color: #ffffff;
+    transition: all 300ms;
+  }
 `;
-const Text = styled.p`
-	color: white;
-`;
-export default { Container, NavSelect, Text };
+
+export default { Container, NavSelect };
